@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clone do Orkut</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Orkut de Carlos e Pedro</h1>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#" onmouseover="showHint('Veja seu perfil!')">Perfil</a></li>
+        <li><a href="#" onmouseover="showHint('Ver seus recados')">Recados</a></li>
+        <li><a href="#" onmouseover="showHint('Ver suas fotos')">Fotos</a></li>
+        <li><a href="#" onmouseover="showHint('Ver comunidades')">Comunidades</a></li>
+        <li><a href="#" onmouseover="showHint('Ver amigos')">Amigos</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section class="profile" onmouseover="showHint('Este é o Carlos!')">
+        <img src="Foto de carlos.jpg" alt="Foto de Carlos" />
+        <h2>Carlos</h2>
+        <p>Gosta de programação e Rock.</p>
+      </section>
+
+      <section class="profile" onmouseover="showHint('Este é o Pedro!')">
+        <img src="Foto de pedro.jpg" alt="Foto de Pedro"/>
+        <h2>Pedro</h2>
+        <p>Amante de música e esportes.</p>
+      </section>   
+
+
+      <section class="profile" onmouseover="showHint('Este é rafael!')">
+       <img src="Foto de rafael.jpg" alt="Foto de rafael"/>
+       <h2>rafael</h2>
+       <p>Eu fico LokCo com uma coisas dessas</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Orkut Clone - Desenvolvido por Carlos e Pedro</p>
+  </footer>
+
+  <!-- Área para mostrar dica -->
+  <div id="tooltip"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
