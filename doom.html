@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOOM</title>
-  <script src="https://js-dos.com/6.22/current/js-dos.js"></script>
   <style>
     body {
       background-color: black;
       color: white;
-      margin: 0;
       font-family: Arial, sans-serif;
       text-align: center;
     }
 
-    #doom {
-      width: 640px;
-      height: 400px;
-      margin: 60px auto;
+    iframe {
+      margin-top: 40px;
+      border: none;
     }
 
     a {
@@ -30,15 +27,13 @@
   </style>
 </head>
 <body>
+  <h1>Jogue DOOM</h1>
 
-  <h1>DOOM</h1>
-  <div id="doom"></div>
+  <iframe src="https://classicreload.com/embed/doom.html" 
+          width="800" height="600" frameborder="0" 
+          allowfullscreen>
+  </iframe>
 
   <a href="jogos.html">← Voltar para Jogos</a>
-
-  <script>
-    Dos(document.getElementById("doom")).run("https://js-dos.com/cdn/upload/DOOM.zip");
-  </script>
-
 </body>
 </html>
